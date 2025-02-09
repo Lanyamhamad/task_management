@@ -20,32 +20,24 @@ This app allows users to:
 ## **📂 Project Structure**
 
 📂 lib/
+
+├── 📂 config/            # Firebase Connection (firebaseOpetions)
+
 ├── 📂 models/            # Data Models (TaskModel, CategoryModel)
+
 ├── 📂 providers/         # State Management (TaskProvider, ThemeProvider)
+
 ├── 📂 services/          # Firebase interactions (TaskService)
+
+├── 📂 utils/             # helper functions 
+
 ├── 📂 screens/           # UI Screens (Home, Task Calendar, Add Task, Settings)
+
 ├── 📂 widgets/           # Reusable UI Components (TaskListTile, AppText, etc.)
+
 ├── 📝 main.dart          # Entry point of the application
 
 ---
-
-
-
-## **📊 Database Setup**
-
-The app uses Firebase Firestore for task storage. Collections include:
-
-tasks (id, title, description, dueDate, priority, status, categoryId)
-
-categories (id, name)
-
-Ensure Firebase is configured:
-
-Add google-services.json (Android) inside android/app/.
-
-Add GoogleService-Info.plist (iOS) inside ios/Runner/.
-
-Enable Firestore Database in Firebase Console.
 
 
 
@@ -59,6 +51,9 @@ Enable Firestore Database in Firebase Console.
 ## **🚀 Future Improvements**
 
 🔹 Implement push notifications for due tasks.
+
 🔹 Add task reminders and alarms.
+
 🔹 Improve UI with animations and themes.
+
 🔹 Integrate cloud sync with Firebase Auth.

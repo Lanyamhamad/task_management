@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:personal_task_manager/screens/add_task_screen.dart';
-import 'package:personal_task_manager/screens/profile_screen.dart';
+import 'package:personal_task_manager/screens/drawer_pages/profile_screen.dart';
 import 'package:personal_task_manager/screens/task_list.dart';
 
 class HomeScreen extends StatefulWidget {
