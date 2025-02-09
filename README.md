@@ -3,10 +3,20 @@
 A Flutter-based **Personal Task Manager** to help users organize tasks efficiently. Built using **Flutter** and **Firebase Firestore**, following **MVVM architecture** for better scalability.
 
 ---
+
 ## **🚀 Overview**
 A Flutter-based Personal Task Manager to help users organize tasks efficiently. Built using Flutter and Firebase Firestore, following MVVM architecture for better scalability.
 
 ---
+
+# our team
+
+## **Lanya Mohammed**
+## **Sozayar Mohammed**
+## **Eman Abdulsamad**
+
+---
+
 ## **🚀 Features**
 This app allows users to:
 ✅ Add, edit, and delete tasks.
