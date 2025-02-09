@@ -1,16 +1,64 @@
-# tasks_management
+# 📌 Personal Task Manager
 
-A new Flutter project.
+A Flutter-based **Personal Task Manager** to help users organize tasks efficiently. Built using **Flutter** and **Firebase Firestore**, following **MVVM architecture** for better scalability.
 
-## Getting Started
+---
+## **🚀 Overview**
+A Flutter-based Personal Task Manager to help users organize tasks efficiently. Built using Flutter and Firebase Firestore, following MVVM architecture for better scalability.
 
-This project is a starting point for a Flutter application.
+---
+## **🚀 Features**
+This app allows users to:
+✅ Add, edit, and delete tasks.
+✅ Categorize tasks with priorities.
+✅ View tasks on a calendar-based UI.
+✅ Track task completion status.
+✅ State management using Provider.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## **📂 Project Structure**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+📂 lib/
+├── 📂 models/            # Data Models (TaskModel, CategoryModel)
+├── 📂 providers/         # State Management (TaskProvider, ThemeProvider)
+├── 📂 services/          # Firebase interactions (TaskService)
+├── 📂 screens/           # UI Screens (Home, Task Calendar, Add Task, Settings)
+├── 📂 widgets/           # Reusable UI Components (TaskListTile, AppText, etc.)
+├── 📝 main.dart          # Entry point of the application
+
+---
+
+
+
+## **📊 Database Setup**
+
+The app uses Firebase Firestore for task storage. Collections include:
+
+tasks (id, title, description, dueDate, priority, status, categoryId)
+
+categories (id, name)
+
+Ensure Firebase is configured:
+
+Add google-services.json (Android) inside android/app/.
+
+Add GoogleService-Info.plist (iOS) inside ios/Runner/.
+
+Enable Firestore Database in Firebase Console.
+
+
+
+## **Tech Stack**
+- **Framework:** Flutter (Dart)  
+- **State Management:** Provider  
+- **Database:** Firebase  
+- **UI Components:** Material Design
+
+---
+## **🚀 Future Improvements**
+
+🔹 Implement push notifications for due tasks.
+🔹 Add task reminders and alarms.
+🔹 Improve UI with animations and themes.
+🔹 Integrate cloud sync with Firebase Auth.

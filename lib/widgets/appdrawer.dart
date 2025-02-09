@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:personal_task_manager/screens/contact_us.dart';
+import 'package:personal_task_manager/screens/drawer_pages/contact_us.dart';
 import 'package:personal_task_manager/screens/home_screen.dart';
-import 'package:personal_task_manager/screens/setting_screen.dart';
-import 'package:personal_task_manager/screens/task_calender.dart';
+import 'package:personal_task_manager/screens/drawer_pages/setting_screen.dart';
+import 'package:personal_task_manager/screens/drawer_pages/task_calender.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -18,14 +18,14 @@ class MyDrawer extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Color.fromARGB(255, 74, 20, 140),
               ),
-              child: Column(
+              child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SvgPicture.asset(
                   'assets/todo.svg', // Replace with your SVG file path
                   height: 80,
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(width: 5),
                   Text(
                     'Menu',
                     style: TextStyle(
@@ -36,7 +36,13 @@ class MyDrawer extends StatelessWidget {
                 ],
               ),
             ),
-
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text('Home'),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+              },
+            ),
             ListTile(
               leading: Icon(Icons.settings),
               title: Text('Setting'),

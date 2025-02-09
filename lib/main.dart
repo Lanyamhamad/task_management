@@ -37,8 +37,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
+            title: 'Personal Task Manager',
+            theme: AppTheme.lightTheme,
      
-      home: const SplashScreen(),
+          home: const SplashScreen(),
 
         );
       }

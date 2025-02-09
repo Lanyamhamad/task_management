@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:personal_task_manager/main.dart';
 import 'package:personal_task_manager/providers/task_provider.dart';
 import 'package:personal_task_manager/widgets/app_text.dart';
 import 'package:personal_task_manager/widgets/appdrawer.dart';
