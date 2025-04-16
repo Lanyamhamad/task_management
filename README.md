@@ -9,14 +9,6 @@ A Flutter-based Personal Task Manager to help users organize tasks efficiently. 
 
 ---
 
-# our team
-
-## **Lanya Mohammed**
-## **Sozayar Mohammed**
-## **Eman Abdulsamad**
-
----
-
 ## **🚀 Features**
 This app allows users to:
 ✅ Add, edit, and delete tasks.
